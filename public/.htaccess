@@ -1,0 +1,13 @@
+RewriteEngine ON
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+
+
+RewriteCond %{HTTPS} off
+RewriteRule .* - [E=REQUEST_SCHEME:http]
+
+RewriteCond %{HTTPS} on
+RewriteRule .* - [E=REQUEST_SCHEME:https]

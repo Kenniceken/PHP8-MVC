@@ -1,0 +1,12 @@
+{
+    "name": "kenniceken/clip-classic-consult",
+    "authors": [
+        {
+            "name": "Kenniceken",
+            "email": "kennice_offor@yahoo.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6.3"
+    }
+}
